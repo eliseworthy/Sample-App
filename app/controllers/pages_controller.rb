@@ -1,15 +1,15 @@
 class PagesController < ApplicationController
-
+  
   def home
-    @title = 'Home'
+    @title = action_name.capitalize
   end
 
   def contact
-    @title = 'Contact'
+    @title = action_name.capitalize
   end
   
   def about
-    @title = "About"
+    @title = action_name.capitalize
   end  
 end
 
